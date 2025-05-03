@@ -1,7 +1,7 @@
 def solution(brown, yellow):
     result = set()
     n = brown + yellow
-    for i in range(3, n+1):
+    for i in range(3, n//3+1): # n+1까지 볼거없고, n//3+1까지 보면돼
         # i가 n의 약수일 때
         if n % i ==0:
             result.add((max(i, n//i), min(i, n//i))) # [wide, height]
