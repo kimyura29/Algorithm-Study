@@ -8,9 +8,7 @@ for _ in range(n):
     # f가 총 도착지점인 d보다 작아야 의미있는 지름길
     if f <= d:
         road.append((s,f,l))
-
-# 최소 거리
-result = float('inf')
+        
 distance = [i for i in range(d+1)] # 고속도로 길이만큼
 
 for i in range(d+1):
