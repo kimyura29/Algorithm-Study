@@ -1,7 +1,7 @@
 import sys
 input = sys.stdin.readline
 n = int(input())
-fibo = [0] * (n+1)
+
 def sol(n):
     if n == 0:
         return 0
